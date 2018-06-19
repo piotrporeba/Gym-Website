@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset = "utf-8">
+<script type = "text/javascript">
+function tipDisplay()
+{
+	tip=new Array();
+	tip[0]="<strong>That which does not kill us makes us stronger.</strong>";
+	tip[1]="<strong>Nobody can hurt me without my permission.</strong>";
+	tip[2]="<strong>Better to be strong than pretty and useless. </strong>";
+	tip[3]="<strong>We are only as strong as we are united, as weak as we are divided.</strong>"
+
+	var chosentip=Math.floor(Math.random()*tip.length);
+
+	document.getElementById('tipbox').innerHTML=tip[chosentip];
+}
+function mouseOver(){
+    alert("Hit OK button if you can do it like me! or x button at the top if you think you need to work a little harder.");
+    }
+
+</script>
+<title> Gym </title>
+<style>@import "css/gym.css"</style>
+<style>@import "css/nav.css"</style>
+</head>
+
+<body onLoad="tipDisplay();" >
+<header>
+<a href="index.html"><img class="moving" src="images/header3.gif" alt="header"></a>
+</header>
+<div id= "nav">
+
+        <a href="index.html" class="button">Home </a>
+        <a href="classes.html" class="button" id="active">Classes </a>
+        <a href="timetables.html" class="button">Timetables </a>
+        <a href="membership.html" class="button">Membership </a>
+        <a href="shop.html" class="button">Shop </a>
+        <a href="contactus.html" class="button">Contact Us </a>
+        <a href="sitemap.html" class="button">Site Map </a>
+</div>
+<h1> <em>Our Classes</em> </h1>
+
+
+
+
+<div id="bootcamp">
+<h2><em>Bootcamp</em></h2>
+<label class="collapse" for="_1">Price for Member</label>
+<input id="_1" type="checkbox">
+<div>FREE!</div>
+<label class="collapse" for="_2">Pricefor nonmember</label>
+<input id="_2" type="checkbox">
+<div>10 eouro per class</div>
+<p>
+Intense rounds of resistance and cardio-vascular training using a variety of equipment along with solid
+bodyweight movements to keep fitness and muscular endurance in top shape. Movements are explosive which
+is great for burning calories and elevating the metabolism long after the workout is complete. Bootcamp days:
+<p>
+<ol>
+    <li>Freeweight workout</li>
+    <li>Boxing workout</li>
+    <li>Bodyweight workout</li>
+</ol>
+
+</div>
+
+<div id="spinning">
+<h2> <em>Spinning/Cycling </em> </h2>
+<p>
+A fun and challenging spinning class that will burn calories fast.
+Participants travel on flat roads, climb gradients, sprint and race - all in cooling darkness..
+A fantastic 45 minute, cardio and endurance workout. Suitable for all levels of fitness. Attendants please ensure to
+bring:
+</p>
+<dl>
+    <dt>water</dt>
+    <dd>hydration is essential, 2 liter bottle per training is required</dd>
+    <dt>Towel</dt>
+    <dd>to leave equipment in clean order after training</dd>
+    <dt>Fitness clothing</dt>
+    <dd> for obvious reasons</dd>
+</dl>
+</div>
+
+<div id="strength">
+<h2> <em>Strength and Conditioning</em> </h2>
+<div id="tipbox"></div>
+<p>
+Challenging workouts based on cardiovascular capacity, along with strength and conditioning.
+A large array of equipment is used in our functional zone to make this class very unique.
+Excellent class to improve overall conditioning, agility and speed. Classes include:
+</p>
+<ul>
+    <li>Stretching</li>
+    <li>Weight Lifting</li>
+    <li>Cardio training</li>
+</ul>
+
+</div>
+
+<div id="crossfit">
+<h2><em>Crossfit</em></h2>
+<p>CrossFit is a strength and conditioning program designed to improve the overall fitness of everyone
+from professional athletes who compete at an international level to stay at home mothers, from elite
+special force commandos who operate behind enemy lines to our grandparents. Everyone deserves world class
+fitness, thats what CrossFit provides.<br><br>
+<img src="https://49.media.tumblr.com/e84977e7cfa38c2a109daea3dfcfcf5b/tumblr_mqps85LHQ01s37tx6o1_500.gif" id="image2" class="pic" alt="crossfit" onMouseover="mouseOver();">
+
+</p>
+</div>
+
+<div id="footer">
+<img src="images/onlinewebcheck.png" class="validatorleft" alt="validator"><img src="images/validatorNu.jpg." class="validatorleft" alt="validator">
+<h3><a href="https://twitter.com/powerhousegym">https://twitter.com/powerhousegym</a></h3>
+<h3><a href="https://www.facebook.com/thepowerhousedublin/">Facebook</a></h3>
+<h3><a href="mailto:poreba_piotr@yahoo.com">poreba_piotr@yahoo.com</a></h3>
+<h3>Piotr Poreba &copy;</h3>
+</div>
+</body>

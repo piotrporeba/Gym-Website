@@ -1,0 +1,367 @@
+body{
+    background-image: url("../images/background2.jpg");
+    }
+
+#header .fixed{
+    height:250px; 
+    width:1334px;
+    }
+header .moving{
+        height:250px;
+        width:100%;
+        }      
+h1{
+    text-align: center;
+    color:beige;
+ 
+    }
+h2{
+    text-align: center;
+    }
+small{
+   color:red;
+   }
+#section4 {
+    margin-left:18%;
+    margin-Right:15%;
+    width: 60%;
+    padding: 20px;
+    float:left; 
+    background-color:beige;
+    height:100%;
+    border: 1px solid black;
+    border-radius: 5px;
+}    
+.smap{
+   margin-left:50px;
+   }
+#section3 {
+    width: 60%;
+    padding: 20px;
+    float:left; 
+    background-color:beige;
+    margin:5px;
+    height:977px;
+    border:1px solid black;
+    border-radius: 5px;
+}
+#section3 .image3{
+    float:left;
+    height:430px;
+    }
+#section3 .image2{
+    padding-left:20px;
+    padding-bottom:20px;
+    width:200px;
+    height:200px;
+    float:right;
+    }   
+#sideb3 .image3{
+    margin-left:130px;
+    height:150px;
+    padding-top:20px;
+    }
+#sideb3{
+    padding:20px;
+    margin:5px;
+    width: 30%;
+    background-color:beige;
+    float:left;
+    height:977px;
+    border:1px solid black;
+    border-radius: 5px;
+    }
+#section2 table{
+    border:2px #dbe5f0 solid;
+    border-radius: 5px;
+    border-collapse:collapse;
+    background-color:beige;
+    text-align:center;
+    
+    margin-left:300px;
+    height:700px;
+    width:700px;
+    }
+#section2 th, td{
+    border:2px black solid;
+    }
+ #section2 th {
+    background: #FF7700;
+    color: white;
+  }
+#section2 tbody tr:nth-child(odd) {
+    background: #dbe5f0;
+  }
+
+.submitshop{
+    margin-left:600px;
+    margin-top:20px;
+    margin-bottom:20px;
+    }
+#section1 table td{
+    border:1px solid black;
+    }  
+#section1 table{
+    text-align: center;
+    border:1px solid black;
+    border-radius: 5px;
+    background-color:beige;
+    width:600px;
+    height:700px;
+    padding-right:20px; 
+    }
+#section1 table .noclass{
+    Background-color:#FF7700;
+    }
+#sideb1 table td{
+    border:1px solid black; 
+    }  
+#sideb1 table{
+    text-align: center;
+    border:1px solid black;
+    border-radius: 5px;
+    background-color:beige;
+    width:300px;
+    height:700px;
+    padding-right:20px;
+    }
+#sideb1 table .noclass{
+    Background-color:#FF7700;
+    }       
+#section1 {
+    padding-left: 50px;
+    padding-right: 50px;
+    float:left;
+    margin-left:90px;
+    height:850px;
+}
+#sideb1{
+    padding-left: 50px;
+    padding-right: 50px;
+    float:left;
+    }
+#section {
+    width: 60%;
+    padding: 20px;
+    float:left; 
+    background-color:beige;
+    margin:5px;
+    margin-left:10px;
+    height:100%;
+    border: 1px solid black;
+    border-radius: 5px;
+} 
+#sideb{
+    padding:20px;
+    margin:5px;
+    width: 30%;
+    background-color:beige;
+    float:left;
+    border: 1px solid black;
+    border-radius: 5px;
+    height:100%;
+    padding-bottom:35px;
+    }
+#bootcamp{
+    margin-left:40px;
+    width:20%;
+    height:420px;
+    padding: 20px;
+    float:left;
+    background-color:beige;
+    margin-top:5px;
+    margin-right:5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    }
+    
+#spinning{
+    width:20%;
+    height:420px;
+    padding: 20px;
+    float:left;
+    background-color:beige;
+    margin:5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    }
+#strength{
+    width:20%;
+    height:420px;
+    padding: 20px;
+    float:left;
+    background-color:beige;
+    margin:5px; 
+    border: 1px solid black;
+    border-radius: 5px;
+    }
+#crossfit{
+    width:20%;
+    height:420px;
+    padding: 20px;
+    float:left;
+    background-color:beige;
+    margin:5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    }
+#image2{
+    width:100%;
+    }
+#getfit{
+    clear:both;
+    }
+#slideshow{
+    clear:both;
+    }
+
+#logo2{
+    margin-left:300px;
+   
+    }
+.contactoption{
+width:270px;
+float:left;
+}
+.contactfield{
+width:100px;
+float:left;
+}
+.textarea{
+    margin-left:100px;
+    }
+#personalleft{
+    float:left;
+    width:370px;
+    }
+#personalright{
+    float:left;
+    width:370px;
+    }
+.left{
+   width:150px;
+   float:left;
+   }
+.right{
+   width:150px;
+   float:left;
+   }
+#continued{
+    padding-left:150px;
+    float:left;
+    }
+.member{
+    float:left;
+    width:150px;
+    }
+#facleft{
+    margin-left:150px;
+    }
+#facright{
+     margin-left:150px;
+     }
+ .top{
+     float:left;
+     width:160px;
+     }    
+#aimsleft{
+    
+    margin-left:150px;
+    }
+#aimsright{
+    margin-left:150px;
+    }
+#payment{
+    margin-left:150px;
+    }
+.paymentimage{
+   width:100px;
+   padding-right:20px;
+   }
+#otherdetails{
+    margin-left:150px;
+    }
+#upload{
+    margin-left:150px;
+    }
+#submitmember{
+    margin-left:340px;
+    margin-right:10px;
+    }
+#slideshow{
+    width:750px;
+    height:437px;
+    }
+#logo2{
+    width:30%;
+    }
+#footer {
+        clear: both;
+        height: 100px;
+        border-top:solid black 2px;
+        text-align: center;
+        color:beige;              
+}
+#footer a:link{
+    color: beige;
+    text-decoration:none;
+    }
+
+#footer a:visited{
+    color:#FF7700;
+    }
+#footer a:hover{
+    color: black;
+    background-color: beige;
+    }
+#wrapper{
+    width:1344px;
+    margin:auto;
+    }
+#laska{
+width:120px;
+height:105px;
+background:url(images/laska.jpg);
+margin-top:725px;
+}
+#gmap_canvas{
+     height:300px;
+     width:400px;
+     max-width:none;
+     background:none;
+     }
+ #gmap_style{
+      overflow:hidden;
+      height:300px;
+      width:400px;
+      }
+  #gmapoverflow{
+  overflow:hidden;
+  height:300px;
+  width:400px;
+  } 
+ 
+ .collapse{
+   cursor: pointer;
+   display: block;
+   background: #dbe5f0;
+ }
+ .collapse + input{
+   display: none; /* hide the checkboxes */
+ }
+ .collapse + input + div{
+   display:none;
+ }
+ .collapse + input:checked + div{
+   display:block;
+}
+
+#footer .validatorleft{
+    width:70px;
+    height:70px;
+    float:left;
+    clear:both;
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left:400px;
+    }

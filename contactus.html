@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset = "utf-8">
+<script type = "text/javascript">
+function query(){
+alert("Thank you for submitting your query, you will receive reply shortly");
+}
+</script>
+<title> Gym </title>
+
+<style>@import "css/gym.css"</style>
+<style>@import "css/nav.css"</style>
+</head>
+
+<body>
+<header>
+<a href="index.html"><img class="moving" src="images/header3.gif" alt="header"></a>
+</header>
+<div id= "nav">
+
+        <a href="index.html" class="button">Home </a>
+        <a href="classes.html" class="button">Classes </a>
+        <a href="timetables.html" class="button">Timetables </a>
+        <a href="membership.html" class="button">Membership </a>
+        <a href="shop.html" class="button">Shop </a>
+        <a href="contactus.html" class="button" id="active">Contact Us </a>
+        <a href="sitemap.html" class="button">Site Map </a>
+</div>
+<h1> <em>Contact Us</em> </h1>
+
+<div id="section4">
+<form method="post">
+<img id="logo2" src="images/gymlogo2.jpg" alt="logo2">
+<p> if you have any query regarding our gym please compleate the form below</p>
+<br>
+<fieldset>
+<legend> Your information</legend>
+<label class="contactfield">First name:</label>
+<input type= "text" size="20" maxlength="20" placeholder="enter first name" required><small>*</small>
+<br>
+<label class="contactfield">Last name:</label>
+<input type= "text" size="20" maxlength="20" placeholder="enter last name" required><small>*</small>
+<br>
+<label class="contactfield">Email address:</label>
+<input type= "email" size="20" maxlength="20"  placeholder="enter email adress" required><small>*</small>
+<br>
+<label class="contactfield">Phone number:</label>
+<input type= "tel" size="20" maxlength="20" placeholder="enter phone number" title="use this format 0879999999">
+<br>
+</fieldset>
+<fieldset>
+<legend>Your query</legend>
+<br>
+<textarea rows="10" cols="50" class="textarea">
+</textarea>
+<br>
+<br>
+<label class="contactoption"> What does the querry concern?:</label>
+<select>
+	<option value="Classes">Classes</option>
+	<option value="Timetables">Timetables</option>
+	<option value="Membership">Membership</option>
+	<option value="Shop">Shop</option>
+</select>
+<br>
+<label class="contactoption"> Please indicate the degree of urgency:</label>
+<select>
+	<option value="notUrgent">Not Urgent</option>
+	<option value="urgent">Urgent</option>
+	<option value="veryurgent">Very Urgent</option>
+</select>
+<br>
+</fieldset>
+<br>
+<input type = "submit" value="Send" class="button" onClick="query()" id="submitmember">
+<input type = "reset" value="reset">
+
+</form>
+</div>
+<div id="footer">
+<img src="images/onlinewebcheck.png" class="validatorleft" alt="validator"><img src="images/validatorNu.jpg." class="validatorleft" alt="validator">
+<h3><a href="https://twitter.com/powerhousegym">https://twitter.com/powerhousegym</a></h3>
+<h3><a href="https://www.facebook.com/thepowerhousedublin/">Facebook</a></h3>
+<h3><a href="mailto:poreba_piotr@yahoo.com">poreba_piotr@yahoo.com</a></h3>
+<h3>Piotr Poreba &copy;</h3>
+</div>
+</body>

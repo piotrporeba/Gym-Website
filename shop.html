@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset = "utf-8">
+<script type = "text/javascript">
+
+function calc()
+{
+
+// declare the variables for use in the program
+  QtyCreatine = 0;  QtyProtein = 0; QtyAmino = 0; QtyBar = 0; QtyMass = 0;
+  TotCreatine = 0;  TotProtein = 0; TotAmino = 0; TotBar = 0; TotMass= 0;
+// declare the Prices
+  PrcCreatine = 20.00; PrcProtein = 70.00; PrcAmino = 30.00; PrcBar = 20.00; PrcMass = 50.00;
+// ITEM A: check if user has entered a quantity in the input box
+// if they have assign it to an internal variable
+  if (document.getElementById("qcreatine").value > "")
+     	{
+     	QtyCreatine = document.getElementById("qcreatine").value;
+     	}
+
+ // calculate the subtotal for Item A & display it
+
+  TotCreatine = eval(QtyCreatine) * eval(PrcCreatine);
+  TotCreatine = TotCreatine.toFixed(2);
+  document.getElementById("totalcreatine").value = TotCreatine;
+
+// protein
+// if they have assign it to an internal variable
+
+  if (document.getElementById("qprotein").value > "")
+     {
+     	QtyProtein = document.getElementById("qprotein").value;
+     }
+   TotProtein = eval(QtyProtein) * eval(PrcProtein);
+   TotProtein = TotProtein.toFixed(2);
+  	document.getElementById("totalprotein").value = TotProtein;
+
+//amino acids
+
+  if (document.getElementById("qamino").value > "")
+     {
+     	QtyAmino = document.getElementById("qamino").value;
+     }
+   TotAmino = eval(QtyAmino) * eval(PrcAmino);
+   TotAmino = TotAmino.toFixed(2);
+  	document.getElementById("totalamino").value = TotAmino;
+
+ //animal pak
+   if (document.getElementById("qbar").value > "")
+      {
+      	QtyBar = document.getElementById("qbar").value;
+      }
+    TotBar = eval(QtyBar) * eval(PrcBar);
+    TotBar = TotBar.toFixed(2);
+  	document.getElementById("totalbar").value = TotBar;
+// mass
+  if (document.getElementById("qmass").value > "")
+     {
+     	QtyMass = document.getElementById("qmass").value;
+     }
+   TotMass = eval(QtyMass) * eval(PrcMass);
+   TotMass = TotMass.toFixed(2);
+   document.getElementById("totalmass").value = TotMass;
+
+// Keep a Running Total & display it
+
+  Totamt = 0 + eval(TotCreatine) + eval(TotProtein) + eval(TotAmino) + eval(TotBar) + eval(TotMass);
+  Totamt = Totamt.toFixed(2);
+  document.getElementById("GrandTotal").value = Totamt;
+
+}
+</script>
+<script type = "text/javascript">
+
+   var creatine = new Image();
+   creatine.src = "images/creatine.jpg";
+   var creatinec = new Image();
+   creatinec.src = "images/creatinec.jpg";
+
+   var protein = new Image();
+   protein.src = "images/protein.png";
+   var proteinc = new Image();
+   proteinc.src = "images/proteinc.png";
+
+   var amino = new Image();
+   amino.src = "images/amino.png";
+   var aminoc = new Image();
+   aminoc.src = "images/aminoc.png";
+
+   var animal = new Image();
+   animal.src = "images/animal.png";
+   var animalc = new Image();
+   animalc.src = "images/animalc.png";
+
+   var mass = new Image();
+   mass.src = "images/mass.png";
+   var massc = new Image();
+   massc.src = "images/massc.png";
+
+function popcreatine(){
+    alert("Creatine was added to your basket");
+    }
+function popprotein(){
+    alert("Proteins were added to your basket");
+    }
+function popamino(){
+    alert("Amino was added to your basket");
+    }
+function popanimal(){
+    alert("Animal was added to your basket");
+    }
+function popmass(){
+    alert("Serious Mass was added to your basket");
+    }
+</script>
+
+<title> Gym </title>
+
+<style>@import "css/gym.css"</style>
+<style>@import "css/nav.css"</style>
+</head>
+
+<body>
+<header>
+<a href="index.html"><img class="moving" src="images/header3.gif" alt="header"></a>
+</header>
+<div id= "nav">
+
+        <a href="index.html" class="button">Home </a>
+        <a href="classes.html" class="button">Classes </a>
+        <a href="timetables.html" class="button">Timetables </a>
+        <a href="membership.html" class="button">Membership </a>
+        <a href="shop.html" class="button" id="active">Shop </a>
+        <a href="contactus.html" class="button">Contact Us </a>
+        <a href="sitemap.html" class="button">Site Map </a>
+</div>
+<h1> <em>Shop</em> </h1>
+
+<div id="section2">
+<form action="#" method="POST" >
+<table>
+  <tr>
+     <th>Product</th>
+     <th>Price</th>
+     <th>Quantity</th>
+     <th>Sum</th>
+  </tr>
+
+  <tr>
+     <td>Creatine Monohydrate<br><br><a href="creatine.html"><img src="images/creatine.jpg" id="creatineimage" class="pic" alt="creatine"
+          onMouseOut="creatineimage.src = creatine.src"
+          onMouseOver="creatineimage.src = creatinec.src"></a></td>
+     <td>20 euro</td>
+     <td><input type="number" id="qcreatine" min="0" max="1000"><input type="button" value="add" onClick="calc(); popcreatine()"></td>
+     <td ><input type="text" id="totalcreatine" size="6"  onchange="calc()"></td>
+
+  </tr>
+  <tr>
+     <td>Protein powder<br><br><a href="protein.html"><img src="images/protein.png" id="proteinimage" class="pic" alt="protein"
+     onMouseout="proteinimage.src= protein.src"
+     onMouseOver="proteinimage.src= proteinc.src"></a></td>
+	 <td>70 euro</td>
+     <td><input type="number" id="qprotein" min="0" max="1000"><input type="button" value="add" onClick="calc(); popprotein()"></td>
+     <td ><input type="text" id="totalprotein" size="6"  onchange="calc()"></td>
+
+  </tr>
+  <tr>
+     <td>Amino acid tablets<br><br><a href="amino.html"><img src="images/amino.png" id="aminoimage" class="pic" alt="amino"
+     onMouseOut="aminoimage.src= amino.src"
+     onmouseOver="aminoimage.src= aminoc.src"></a></td>
+	 <td>30 euro</td>
+     <td><input type="number" id="qamino" min="0" max="1000"><input type="button" value="add" onClick="calc(); popamino()"></td>
+     <td ><input type="text" id="totalamino" size="6"  onchange="calc()"></td>
+
+  </tr>
+  <tr>
+     <td>Animal pak<br><br><a href="animal.html"><img src="images/animal.png" id="animalimage" class="pic" alt="animal"
+     onMouseout="animalimage.src= animal.src"
+     onMouseOver="animalimage.src= animalc.src"></a></td>
+	 <td>20 euro</td>
+     <td><input type="number" id="qbar" min="0" max="1000"><input type="button" value="add" onClick="calc(); popanimal()"></td>
+     <td ><input type="text" id="totalbar" size="6"  onchange="calc()"></td>
+
+  </tr>
+    <tr>
+       <td>Serious Mass<br><br><a href="mass.html"><img src="images/mass.png" id="massimage" class="pic" alt="mass"
+       onMouseout="massimage.src= mass.src"
+       onMouseOver="massimage.src= massc.src"></a></td>
+  	 <td>50 euro</td>
+       <td><input type="number" id="qmass" min="0" max="1000"><input type="button" value="add" onClick="calc(); popmass()"></td>
+       <td ><input type="text" id="totalmass" size="6"  onchange="calc()"></td>
+
+  </tr>
+  		<tr>
+  			<td>TOTAL:</td>
+  			<td>&nbsp;</td>
+  			<td>&nbsp;</td>
+  			<td >
+  			<input type="text" id="GrandTotal" size="8" onchange="calc()"></td>
+  		</tr>
+  	</table>
+  			<input class="submitshop" type="submit" value="Submit" onClick="display()">
+  			<input type="reset" value="reset">
+
+</form>
+
+<script>
+function display(){
+   	alert("Thank you for making your order. the total value is: " + Totamt + "euro. you will receive your goods shortly");
+    }
+</script>
+</div>
+<div id="sideb2">
+</div>
+<div id="footer">
+<img src="images/onlinewebcheck.png" class="validatorleft" alt="validator"><img src="images/validatorNu.jpg." class="validatorleft" alt="validator">
+<h3><a href="https://twitter.com/powerhousegym">https://twitter.com/powerhousegym</a></h3>
+<h3><a href="https://www.facebook.com/thepowerhousedublin/">Facebook</a></h3>
+<h3><a href="mailto:poreba_piotr@yahoo.com">poreba_piotr@yahoo.com</a></h3>
+<h3>Piotr Poreba &copy;</h3>
+</div>
+</body>

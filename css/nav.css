@@ -1,0 +1,27 @@
+#nav .button{
+    padding: 5px 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}  
+#nav a.button:link{
+    color: beige;
+    }     
+#nav a.button:visited{
+    color: #FF7700;
+    } 
+#nav a.button:hover{
+    color: black;
+    background-color:beige;
+    }
+#active{
+    color: black;
+    background-color:beige;
+}   
+#nav{
+    margin-left:150px; 
+    }
